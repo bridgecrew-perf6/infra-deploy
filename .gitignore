@@ -1,2 +1,4 @@
 .terraform.lock.hcl
 .terraform/*
+.DS_Store
+terraform.tfstate.d/*
