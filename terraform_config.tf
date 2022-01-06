@@ -1,10 +1,10 @@
 terraform {
   required_version = ">= 1.0"
-  // backend "s3" {
-  //	region = "us-east-1"
-  //	key = "terraformmasterfile"
-  //	bucket = "my-bucket/terraform/state/"
-  //}
+   backend "s3" {
+  	region = "us-east-1"
+  	key = "state/terraform.tfstate"
+  	bucket = "shanu-dev-terraform"
+  }
 }
 
 provider "aws" {
